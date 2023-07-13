@@ -1,0 +1,80 @@
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: rgba(88, 88, 88, .6);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(63, 81, 181, .6);
+}
+
+
+.v-theme--gmail a {
+    color: #222;
+}
+.v-theme--gmail .v-layout{
+    background: rgb(246,248,252);
+}
+.v-theme--gmail .v-app-bar.v-toolbar,.v-theme--gmail  .v-navigation-drawer{
+    --v-theme-surface: 246,248,252;
+}
+.v-theme--gmail .v-main{
+    background: transparent;
+   
+}
+.v-layout{
+    min-height: 100vh;
+    .v-main > *{
+        padding: 1rem;
+    }
+}
+html {
+    .v-card, .control,
+    .v-dialog > .v-overlay__content > .v-card,
+    .v-menu > .v-overlay__content {
+        border-radius: 1rem;
+    }
+    .v-theme--gmail {
+        --v-theme-on-surface: 33,33,33;
+    }
+    .main-warp{
+        border-radius: 1rem;
+        
+        background: rgb(var(--v-theme-background));
+        min-height: calc(100vh - 65px - 1rem);
+    }
+}
+pre{
+    background: rgb(var(--v-theme-code));
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#app .v-theme--dark{
+    a{
+        color: #fff;
+    }
+    .v-navigation-drawer {
+        background-color: rgb(var(--v-theme-surface));
+    }
+}
+.v-theme--light{
+    a{
+        color: #333;
+    }
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}

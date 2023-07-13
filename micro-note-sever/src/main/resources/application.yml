@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/db/notes
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+server:
+  port: 3390
+
+config:
+  md:
+    file:
+      path: ./data/
+      max-size: 1024000

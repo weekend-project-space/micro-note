@@ -17,4 +17,4 @@ md file save in local
 docker run -d -p 3390:3390 -v /home/xxx/micro-note:/workspace/data --name micro-note yangrd/micro-note
 ```
 
-web bowers open http://localhost:3390
+web browser open http://localhost:3390
